@@ -4,6 +4,8 @@ Integrates [remedy.css](https://github.com/mozdevs/cssremedy) with the rails ass
 
 >Start your project with a remedy for the technical debt of CSS. A gift to you from Mozilla Developer Outreach.
 
+CSS Remedy was started and is being led by [Jen Simmons](https://github.com/jensimmons) of Mozilla Developer Outreach.
+A list of contributors can be found [here](https://github.com/mozdevs/cssremedy/graphs/contributors).
 
 ## Installation
 
