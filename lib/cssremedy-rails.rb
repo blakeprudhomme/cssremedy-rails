@@ -1,4 +1,5 @@
-require "cssremedy/rails/version"
+require "cssremedy-rails/version"
+require "cssremedy-rails/engine"
 
 module Cssremedy
   module Rails
