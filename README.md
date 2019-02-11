@@ -1,4 +1,4 @@
-# cssremedy-rails
+# cssremedy-rails · [![Gem Version](https://badge.fury.io/rb/cssremedy-rails.svg)](https://badge.fury.io/rb/cssremedy-rails)
 
 Integrates [remedy.css](https://github.com/mozdevs/cssremedy) with the rails asset pipeline.
 
