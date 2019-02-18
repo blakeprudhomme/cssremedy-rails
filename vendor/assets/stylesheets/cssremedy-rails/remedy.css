@@ -54,6 +54,10 @@ pre {
   white-space: pre-wrap; /* Overflow by default is bad. */
 }
 
+hr {
+  border: .5px solid;
+}
+
 
 /* Are browsers now consistent with margin & padding on lists?
   See: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Consistent_list_indentation  */
@@ -61,19 +65,23 @@ nav ul {
   list-style: none;
 }
 
-
+img, video, canvas, audio, iframe, embed, object  { 
+  display: block; /* Switch display mode to block, since that's what we usually want for images. */
+  vertical-align: middle;  /* If you override, and make an image inline, it's likely you'll want middle vertical alignment. */
+}
+img, video {
+  max-width: 100%; /* Make images and video flexible by default. */
+  height: auto; /* Ensure images and video maintain their aspect ratio when max-width comes into play. */
+}
 img {
   border-style: none; /* Remove the border on images inside links in IE 10 and earlier. */
-  vertical-align: bottom;  /* Fix problem with images having a tiny gap for a descender under them. */
-  display: block; /* Switch display mode to block, since that's what we usually want for images. */
-  max-width: 100%; /* Make images flexible by default. */
-  height: auto; /* Ensure images maintain their aspect ratio when max-width comes into play. */
 }
-
 
 /* In English, when styling the <q> element, use curly quotes instead of straight quotes. */
 
 /* Code for this is now in the quotes.css file */
+
+
 
 
 /* Support upcoming properties that haven't been broadly implemented yet,
@@ -81,11 +89,13 @@ img {
 */
 
 /* Consistent line spacing, which does not unnecessarily grow to accommodate things that would fit anyway */
+/* From CSS Inline Layout Module Level 3: https://drafts.csswg.org/css-inline-3/#line-sizing-property */
 :root {
   line-sizing: normal;
 }
 
 /* Improve spacing of punctuation marks and at script changes in CJK languages */
+/* From CSS Text Module Level 4: https://drafts.csswg.org/css-text-4/#text-spacing-property */
 :root {
   text-spacing: trim-start allow-end trim-adjacent ideograph-alpha ideograph-numeric;
 }
