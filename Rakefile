@@ -4,7 +4,7 @@ require 'open-uri'
 desc 'Download the latest remedy.css'
 task :update do
   puts "[#{Time.now}] Start: Updating remedy.css"
-  url = 'https://raw.githubusercontent.com/mozdevs/cssremedy/master/remedy.css'
+  url = 'https://raw.githubusercontent.com/mozdevs/cssremedy/master/css/remedy.css'
   outputfile = 'vendor/assets/stylesheets/cssremedy-rails/remedy.css'
 
   File.open(outputfile, 'wb') do |file|
