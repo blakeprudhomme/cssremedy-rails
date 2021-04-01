@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cssremedy-rails (0.1.8)
+    cssremedy-rails (0.1.9)
 
 GEM
   remote: https://rubygems.org/
@@ -17,4 +17,4 @@ DEPENDENCIES
   rake (>= 12.3.3)
 
 BUNDLED WITH
-   2.1.2
+   2.1.4
