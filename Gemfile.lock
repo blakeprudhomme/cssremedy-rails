@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cssremedy-rails (0.1.9)
+    cssremedy-rails (0.2.0)
 
 GEM
   remote: https://rubygems.org/
